@@ -15,7 +15,7 @@ export const Snacks = ({ snacks }: SnacksProps) => {
   return (
     <Container>
       {!snacks.length
-        ? Array(4).map((n) => <SkeletonSnack key={n} />)
+        ? [1, 2, 3, 4].map((n) => <SkeletonSnack key={n} />)
         : snacks.map((snack) => {
             const snackExistent = cart.find(
               (item) => item.snack === snack.snack && item.id === snack.id,

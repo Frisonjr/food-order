@@ -10,7 +10,7 @@ export const OrderHeader = () => {
   return (
     <Container>
       <Link to='/'>
-        <img src={logoImg} alt='Food Commerce' />
+        <img src={logoImg} alt='Zé Foods' />
       </Link>
       <div>
         <div>
