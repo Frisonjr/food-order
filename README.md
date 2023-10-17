@@ -1,1 +1,1 @@
-Food Commerce website with fake payment method available in Brazil
+Food Commerce website with fake payment method 
