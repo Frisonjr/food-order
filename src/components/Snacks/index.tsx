@@ -11,11 +11,11 @@ type SnacksProps = {
 
 export const Snacks = ({ snacks }: SnacksProps) => {
   const { cart, addSnackIntoCart } = useCart();
-
+  const arr = [1, 2, 3, 4];
   return (
     <Container>
       {!snacks.length
-        ? [1, 2, 3, 4].map((n) => <SkeletonSnack key={n} />)
+        ? arr.map((n) => <SkeletonSnack key={n} />)
         : snacks.map((snack) => {
             const snackExistent = cart.find(
               (item) => item.snack === snack.snack && item.id === snack.id,
